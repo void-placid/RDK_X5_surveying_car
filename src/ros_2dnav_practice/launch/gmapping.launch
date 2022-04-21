@@ -7,9 +7,10 @@
         <remap from="/scan" to="$(arg scan_topic)"/>
         <param name="base_frame" value="base_footprint"/>
         <param name="odom_frame" value="odom"/>
-        <param name="map_update_interval" value="1.0"/>
-        <param name="maxRange" value="20.0"/>
-        <param name="maxUrange" value="8.0"/>
+        <param name="map_update_interval" value="3.0"/>  <!-- up -->
+        <param name="maxRange" value="5.5"/>
+        <param name="maxUrange" value="5.0"/>
+
         <param name="sigma" value="0.05"/>
         <param name="kernelSize" value="1"/>
         <param name="lstep" value="0.05"/>
@@ -25,13 +26,15 @@
         <param name="linearUpdate" value="0.1"/>
         <param name="angularUpdate" value="0.436"/>
         <param name="temporalUpdate" value="-1.0"/>
-        <param name="resampleThreshold" value="0.5"/>
-        <param name="particles" value="30"/>
-        <param name="xmin" value="-100.0"/>
-        <param name="ymin" value="-100.0"/>
-        <param name="xmax" value="100.0"/>
-        <param name="ymax" value="100.0"/>
-        <param name="delta" value="0.05"/>
+        <param name="resampleThreshold" value="0.6"/>
+        <param name="particles" value="13"/>
+
+        <param name="xmin" value="-5.0"/>
+        <param name="ymin" value="-5.0"/>
+        <param name="xmax" value="5.0"/>
+        <param name="ymax" value="5.0"/>
+        <param name="delta" value="0.03"/>
+
         <param name="llsamplerange" value="0.01"/>
         <param name="llsamplestep" value="0.01"/>
         <param name="lasamplerange" value="0.005"/>

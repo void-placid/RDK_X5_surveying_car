@@ -938,6 +938,9 @@ cmake_utils_DIR:PATH=/home/liqure/catkin_ws/devel/share/cmake_utils/cmake
 //Value Computed by CMake
 cmake_utils_SOURCE_DIR:STATIC=/home/liqure/catkin_ws/src/FAEP/uav_simulator/Utils/cmake_utils
 
+//The directory containing a CMake configuration file for costmap_2d.
+costmap_2d_DIR:PATH=/opt/ros/noetic/share/costmap_2d/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
@@ -961,6 +964,9 @@ exploration_manager_BINARY_DIR:STATIC=/home/liqure/catkin_ws/build/FAEP/faep_pla
 
 //Value Computed by CMake
 exploration_manager_SOURCE_DIR:STATIC=/home/liqure/catkin_ws/src/FAEP/faep_planner/exploration_manager
+
+//The directory containing a CMake configuration file for explore_lite.
+explore_lite_DIR:PATH=/opt/ros/noetic/share/explore_lite/cmake
 
 //The directory containing a CMake configuration file for flann.
 flann_DIR:PATH=flann_DIR-NOTFOUND
@@ -1382,6 +1388,9 @@ urdf_learning_SOURCE_DIR:STATIC=/home/liqure/catkin_ws/src/urdf_learning
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for voxel_grid.
+voxel_grid_DIR:PATH=/opt/ros/noetic/share/voxel_grid/cmake
 
 //Value Computed by CMake
 waypoint_generator_BINARY_DIR:STATIC=/home/liqure/catkin_ws/build/FAEP/uav_simulator/Utils/waypoint_generator

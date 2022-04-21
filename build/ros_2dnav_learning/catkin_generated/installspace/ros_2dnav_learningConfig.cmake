@@ -185,7 +185,7 @@ foreach(t ${ros_2dnav_learning_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "amcl;gmapping;map_server;move_base;roscpp;std_msgs")
+set(depends "amcl;gmapping;map_server;move_base;roscpp;std_msgs;explore_lite")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

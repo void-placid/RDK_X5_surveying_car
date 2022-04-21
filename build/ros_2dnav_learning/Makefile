@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/liqure/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -99,6 +87,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -168,6 +168,216 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
+
+# Convenience name for target.
+AutonomousExploration: ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
+
+.PHONY : AutonomousExploration
+
+# fast build rule for target.
+AutonomousExploration/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build
+.PHONY : AutonomousExploration/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_nodejs: ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_py: ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_py.dir/build.make ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_nodejs: ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : map_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+map_msgs_generate_messages_nodejs/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+.PHONY : map_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_lisp: ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : map_msgs_generate_messages_lisp
+
+# fast build rule for target.
+map_msgs_generate_messages_lisp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+.PHONY : map_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_eus: ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+.PHONY : map_msgs_generate_messages_eus
+
+# fast build rule for target.
+map_msgs_generate_messages_eus/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_cpp: ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : map_msgs_generate_messages_cpp
+
+# fast build rule for target.
+map_msgs_generate_messages_cpp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make ros_2dnav_learning/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: ros_2dnav_learning/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/tf_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: ros_2dnav_learning/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/tf_generate_messages_eus.dir/build.make ros_2dnav_learning/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/tf_generate_messages_cpp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: ros_2dnav_learning/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/tf_generate_messages_cpp.dir/build.make ros_2dnav_learning/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/costmap_2d_gencfg.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/costmap_2d_gencfg.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+# Convenience name for target.
+costmap_2d_gencfg: ros_2dnav_learning/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+.PHONY : costmap_2d_gencfg
+
+# fast build rule for target.
+costmap_2d_gencfg/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/costmap_2d_gencfg.dir/build.make ros_2dnav_learning/CMakeFiles/costmap_2d_gencfg.dir/build
+.PHONY : costmap_2d_gencfg/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_py: ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+
+.PHONY : costmap_2d_generate_messages_py
+
+# fast build rule for target.
+costmap_2d_generate_messages_py/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+.PHONY : costmap_2d_generate_messages_py/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_nodejs: ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+
+.PHONY : costmap_2d_generate_messages_nodejs
+
+# fast build rule for target.
+costmap_2d_generate_messages_nodejs/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
+.PHONY : costmap_2d_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_lisp: ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+.PHONY : costmap_2d_generate_messages_lisp
+
+# fast build rule for target.
+costmap_2d_generate_messages_lisp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+.PHONY : costmap_2d_generate_messages_lisp/fast
+
+# Convenience name for target.
 ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 .PHONY : ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
@@ -198,6 +408,21 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
+ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_cpp: ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+
+.PHONY : costmap_2d_generate_messages_cpp
+
+# fast build rule for target.
+costmap_2d_generate_messages_cpp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+.PHONY : costmap_2d_generate_messages_cpp/fast
+
+# Convenience name for target.
 ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
@@ -226,6 +451,36 @@ actionlib_generate_messages_eus: ros_2dnav_learning/CMakeFiles/actionlib_generat
 actionlib_generate_messages_eus/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/actionlib_generate_messages_eus.dir/build.make ros_2dnav_learning/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/Return.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/Return.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/Return.dir/rule
+
+# Convenience name for target.
+Return: ros_2dnav_learning/CMakeFiles/Return.dir/rule
+
+.PHONY : Return
+
+# fast build rule for target.
+Return/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/Return.dir/build.make ros_2dnav_learning/CMakeFiles/Return.dir/build
+.PHONY : Return/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: ros_2dnav_learning/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/tf_generate_messages_lisp.dir/build.make ros_2dnav_learning/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
 ros_2dnav_learning/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
@@ -301,6 +556,21 @@ diagnostic_msgs_generate_messages_lisp: ros_2dnav_learning/CMakeFiles/diagnostic
 diagnostic_msgs_generate_messages_lisp/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: ros_2dnav_learning/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/tf_generate_messages_py.dir/build.make ros_2dnav_learning/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
 
 # Convenience name for target.
 ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
@@ -453,6 +723,21 @@ topic_tools_generate_messages_lisp/fast:
 .PHONY : topic_tools_generate_messages_lisp/fast
 
 # Convenience name for target.
+ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_eus: ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 ros_2dnav_learning/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_2dnav_learning/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
@@ -541,21 +826,6 @@ diagnostic_msgs_generate_messages_nodejs: ros_2dnav_learning/CMakeFiles/diagnost
 diagnostic_msgs_generate_messages_nodejs/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule:
-	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
-.PHONY : ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
-
-# Convenience name for target.
-AutonomousExploration: ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
-
-.PHONY : AutonomousExploration
-
-# fast build rule for target.
-AutonomousExploration/fast:
-	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build
-.PHONY : AutonomousExploration/fast
 
 # Convenience name for target.
 ros_2dnav_learning/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
@@ -723,6 +993,21 @@ topic_tools_generate_messages_eus/fast:
 .PHONY : topic_tools_generate_messages_eus/fast
 
 # Convenience name for target.
+ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_eus: ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+
+.PHONY : costmap_2d_generate_messages_eus
+
+# fast build rule for target.
+costmap_2d_generate_messages_eus/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make ros_2dnav_learning/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
+.PHONY : costmap_2d_generate_messages_eus/fast
+
+# Convenience name for target.
 ros_2dnav_learning/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_2dnav_learning/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -796,6 +1081,21 @@ std_srvs_generate_messages_py: ros_2dnav_learning/CMakeFiles/std_srvs_generate_m
 std_srvs_generate_messages_py/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/std_srvs_generate_messages_py.dir/build.make ros_2dnav_learning/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 ros_2dnav_learning/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
@@ -886,6 +1186,21 @@ move_base_msgs_generate_messages_py: ros_2dnav_learning/CMakeFiles/move_base_msg
 move_base_msgs_generate_messages_py/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
 .PHONY : move_base_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_cpp: ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 ros_2dnav_learning/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
@@ -1038,6 +1353,21 @@ move_base_msgs_generate_messages_lisp/fast:
 .PHONY : move_base_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_lisp: ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make ros_2dnav_learning/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
@@ -1079,26 +1409,71 @@ src/AutonomousExploration.cpp.s:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/src/AutonomousExploration.cpp.s
 .PHONY : src/AutonomousExploration.cpp.s
 
+src/Return.o: src/Return.cpp.o
+
+.PHONY : src/Return.o
+
+# target to build an object file
+src/Return.cpp.o:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/Return.dir/build.make ros_2dnav_learning/CMakeFiles/Return.dir/src/Return.cpp.o
+.PHONY : src/Return.cpp.o
+
+src/Return.i: src/Return.cpp.i
+
+.PHONY : src/Return.i
+
+# target to preprocess a source file
+src/Return.cpp.i:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/Return.dir/build.make ros_2dnav_learning/CMakeFiles/Return.dir/src/Return.cpp.i
+.PHONY : src/Return.cpp.i
+
+src/Return.s: src/Return.cpp.s
+
+.PHONY : src/Return.s
+
+# target to generate assembly for a file
+src/Return.cpp.s:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/Return.dir/build.make ros_2dnav_learning/CMakeFiles/Return.dir/src/Return.cpp.s
+.PHONY : src/Return.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... AutonomousExploration"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... install"
+	@echo "... map_msgs_generate_messages_py"
+	@echo "... map_msgs_generate_messages_nodejs"
+	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_eus"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... tf_generate_messages_eus"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... costmap_2d_gencfg"
+	@echo "... costmap_2d_generate_messages_py"
+	@echo "... costmap_2d_generate_messages_nodejs"
+	@echo "... costmap_2d_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_generate_messages_cpp"
+	@echo "... costmap_2d_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_eus"
+	@echo "... Return"
+	@echo "... tf_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install/local"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... tf_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -1109,13 +1484,13 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... amcl_gencfg"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
-	@echo "... AutonomousExploration"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_lisp"
@@ -1127,11 +1502,13 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_eus"
+	@echo "... costmap_2d_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -1139,6 +1516,7 @@ help:
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... install/strip"
 	@echo "... move_base_msgs_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... move_base_msgs_generate_messages_eus"
@@ -1150,10 +1528,14 @@ help:
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... move_base_gencfg"
 	@echo "... move_base_msgs_generate_messages_lisp"
+	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... move_base_msgs_generate_messages_nodejs"
 	@echo "... src/AutonomousExploration.o"
 	@echo "... src/AutonomousExploration.i"
 	@echo "... src/AutonomousExploration.s"
+	@echo "... src/Return.o"
+	@echo "... src/Return.i"
+	@echo "... src/Return.s"
 .PHONY : help
 
 

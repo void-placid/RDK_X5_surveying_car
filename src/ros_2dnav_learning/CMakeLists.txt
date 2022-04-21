@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   genmsg
+  explore_lite
 )
 
 ## System dependencies are found with CMake's conventions
@@ -109,7 +110,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES ros_2dnav_learning
- CATKIN_DEPENDS amcl gmapping map_server move_base roscpp std_msgs
+ CATKIN_DEPENDS amcl gmapping map_server move_base roscpp std_msgs explore_lite
  DEPENDS system_lib
 )
 
@@ -139,6 +140,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/ros_2dnav_learning_node.cpp)
 add_executable(AutonomousExploration src/AutonomousExploration.cpp)
+add_executable(Return src/Return.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -155,6 +157,7 @@ add_executable(AutonomousExploration src/AutonomousExploration.cpp)
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(AutonomousExploration ${catkin_LIBRARIES})
+target_link_libraries(Return ${catkin_LIBRARIES})
 
 #############
 ## Install ##
