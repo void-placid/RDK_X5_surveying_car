@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <include file="$(find ros_2dnav_practice)/launch/car_robot_rplidar.launch"/>
+    <include file="$(find ros_2dnav_practice)/launch/gmapping.launch"/>
+    <include file="$(find ros_2dnav_practice)/launch/move_base.launch"/>
+    
+
+</launch>

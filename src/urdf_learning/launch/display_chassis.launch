@@ -1,0 +1,43 @@
+<launch>
+    <arg name="paused" default="false" />
+    <arg name="use_sim_time" default="true" />
+    <arg name="gui" default="true" />
+    <arg name="headless" default="false" />
+    <arg name="debug" default="false" />
+    <arg name="model" default="$(find urdf_learning)/urdf/car_robot_rplidar.xacro" />
+    <arg name="rvizconfig" default="$(find urdf_learning)/config/car_robot.rviz" />
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="debug" value="$(arg debug)" />
+        <arg name="gui" value="$(arg gui)" />
+        <arg name="paused" value="$(arg paused)" />
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="headless" value="$(arg headless)" />
+    </include>
+
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+    <!--  -->
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui"
+    type="joint_state_publisher_gui" />
+
+    <!-- TF -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+
+
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-param robot_description -urdf -model car_chassis_2diff" />
+
+    <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+        <param name="default_topic" value="/cmd_vel" />
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_learning)/config/car_chassis.rviz"
+    required="true" />
+
+</launch>
+
+    <!-- TF -->
+    <!-- args: xyz rpy parent child -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_laser_link_broadcaster" -->
+    <!-- args="0.15 0.0 0.20 0.0 0.0 0.0 base_link laser"/> -->

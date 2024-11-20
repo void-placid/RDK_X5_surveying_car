@@ -1,0 +1,8 @@
+prefix=/home/liqure/catkin_ws/install
+
+Name: ros_base_learning
+Description: Description of ros_base_learning
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lros_base_learning
+Requires: roscpp rospy std_msgs

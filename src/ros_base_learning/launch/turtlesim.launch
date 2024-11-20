@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1">
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel_cov" />
+    </node>
+    <node pkg="ros_base_learning" type="middle" name="middle" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop_key" output="screen">
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+    </node>
+
+    <param name="scale_linear" value="1" type="double" />
+    <param name="scale_angular" value="1" type="double" />
+</launch>

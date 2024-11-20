@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="move_base" pkg="move_base" type="move_base"  output="screen" respawn="false" clear_params="true">
+        <rosparam command="load" file="$(find ros_2dnav_learning)/config/costmap_common_params.yaml" ns="global_costmap"/>
+        <rosparam command="load" file="$(find ros_2dnav_learning)/config/costmap_common_params.yaml" ns="local_costmap"/>
+        <rosparam command="load" file="$(find ros_2dnav_learning)/config/local_costmap_params.yaml"/>
+        <rosparam command="load" file="$(find ros_2dnav_learning)/config/global_costmap_params.yaml"/>
+        <rosparam command="load" file="$(find ros_2dnav_learning)/config/base_local_planner_params.yaml"/>
+    </node>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/liqure/catkin_ws/devel
+
+Name: ros_2dnav_learning
+Description: Description of ros_2dnav_learning
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

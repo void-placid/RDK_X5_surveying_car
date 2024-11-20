@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<robot name="car_chassis_2diff">
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.08" radius="0.17" />
+            </geometry>
+            <material name="yellow">
+                <color rgba="0.9 0.9 0.1 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <!-- caster locomation start -->
+    <joint name="base_caster_joint" type="fixed">
+        <origin xyz="0.1 0 -0.04" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="caster_link" />
+    </joint>
+    <link name="caster_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <sphere radius="0.01" />
+            </geometry>
+            <material name="black">
+                <color rgba="0.1 0.1 0.1 1" />
+            </material>
+        </visual>
+    </link>
+    <!-- caster locomation end -->
+
+    <!-- left locomation start-->
+    <joint name="base_lf_motor_joint" type="fixed">
+        <origin xyz="-0.03 0.1 -0.02" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="lf_motor" />
+    </joint>
+    <link name="lf_motor">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <geometry>
+                <cylinder length="0.05" radius="0.01" />
+            </geometry>
+            <material name="black">
+                <color rgba="0.1 0.1 0.1 1" />
+            </material>
+        </visual>
+    </link>
+    <joint name="lf_wheel_joint" type="continuous">
+        <origin xyz="0 0.025 0" rpy="0 0 0" />
+        <parent link="lf_motor" />
+        <child link="lf_wheel_link" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <link name="lf_wheel_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <geometry>
+                <cylinder length="0.02" radius="0.03" />
+            </geometry>
+            <material name="grey">
+                <color rgba="0.6 0.6 0.6 1" />
+            </material>
+        </visual>
+    </link>
+    <!-- left locamation end -->
+
+    <!-- right locamation end -->
+    <joint name="base_rt_motor_joint" type="fixed">
+        <origin xyz="-0.03 -0.1 -0.02" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="rt_motor" />
+    </joint>
+    <link name="rt_motor">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <geometry>
+                <cylinder length="0.05" radius="0.01" />
+            </geometry>
+            <material name="black">
+                <!-- <color rgba="0.1 0.1 0.1 1" /> -->
+            </material>
+        </visual>
+    </link>
+    <joint name="rt_wheel_joint" type="continuous">
+        <origin xyz="0 -0.025 0" rpy="0 0 0" />
+        <parent link="rt_motor" />
+        <child link="rt_wheel_link" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <link name="rt_wheel_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <geometry>
+                <cylinder length="0.02" radius="0.03" />
+            </geometry>
+            <material name="grey">
+                <!-- <color rgba="0.1 0.1 0.1 1" /> -->
+            </material>
+        </visual>
+    </link>
+    <!-- right locamation end -->
+
+</robot>
