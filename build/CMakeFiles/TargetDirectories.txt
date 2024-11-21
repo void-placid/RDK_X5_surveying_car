@@ -71,6 +71,7 @@
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/install.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/list_install_components.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/rebuild_cache.dir
+/home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/test.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_py.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/actionlib_generate_messages_cpp.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
@@ -97,6 +98,7 @@
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir
+/home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/std_srvs_generate_messages_lisp.dir
@@ -113,7 +115,6 @@
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/tf2_msgs_generate_messages_py.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/std_srvs_generate_messages_nodejs.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/std_srvs_generate_messages_py.dir
-/home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/test.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/topic_tools_generate_messages_cpp.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/topic_tools_generate_messages_nodejs.dir
 /home/liqure/catkin_ws/build/ros_2dnav_learning/CMakeFiles/sensor_msgs_generate_messages_py.dir

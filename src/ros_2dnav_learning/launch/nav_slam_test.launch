@@ -5,5 +5,6 @@
     <include file="$(find ros_2dnav_learning)/launch/gmapping.launch"/>
     <include file="$(find ros_2dnav_learning)/launch/move_base.launch"/>
     
+    <node name="AutonomousExploration" pkg="ros_2dnav_learning" type="AutonomousExploration" output="log"/>
 
 </launch>

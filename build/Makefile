@@ -857,6 +857,19 @@ diagnostic_msgs_generate_messages_nodejs/fast:
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named AutonomousExploration
+
+# Build rule for target.
+AutonomousExploration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AutonomousExploration
+.PHONY : AutonomousExploration
+
+# fast build rule for target.
+AutonomousExploration/fast:
+	$(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build
+.PHONY : AutonomousExploration/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1364,6 +1377,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... AutonomousExploration"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_lisp"

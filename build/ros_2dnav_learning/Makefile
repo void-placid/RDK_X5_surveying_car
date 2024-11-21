@@ -89,6 +89,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -100,17 +111,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -541,6 +541,21 @@ diagnostic_msgs_generate_messages_nodejs: ros_2dnav_learning/CMakeFiles/diagnost
 diagnostic_msgs_generate_messages_nodejs/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
+.PHONY : ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
+
+# Convenience name for target.
+AutonomousExploration: ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/rule
+
+.PHONY : AutonomousExploration
+
+# fast build rule for target.
+AutonomousExploration/fast:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build
+.PHONY : AutonomousExploration/fast
 
 # Convenience name for target.
 ros_2dnav_learning/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
@@ -1037,6 +1052,33 @@ move_base_msgs_generate_messages_nodejs/fast:
 	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make ros_2dnav_learning/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
 .PHONY : move_base_msgs_generate_messages_nodejs/fast
 
+src/AutonomousExploration.o: src/AutonomousExploration.cpp.o
+
+.PHONY : src/AutonomousExploration.o
+
+# target to build an object file
+src/AutonomousExploration.cpp.o:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/src/AutonomousExploration.cpp.o
+.PHONY : src/AutonomousExploration.cpp.o
+
+src/AutonomousExploration.i: src/AutonomousExploration.cpp.i
+
+.PHONY : src/AutonomousExploration.i
+
+# target to preprocess a source file
+src/AutonomousExploration.cpp.i:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/src/AutonomousExploration.cpp.i
+.PHONY : src/AutonomousExploration.cpp.i
+
+src/AutonomousExploration.s: src/AutonomousExploration.cpp.s
+
+.PHONY : src/AutonomousExploration.s
+
+# target to generate assembly for a file
+src/AutonomousExploration.cpp.s:
+	cd /home/liqure/catkin_ws/build && $(MAKE) -f ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/build.make ros_2dnav_learning/CMakeFiles/AutonomousExploration.dir/src/AutonomousExploration.cpp.s
+.PHONY : src/AutonomousExploration.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1046,6 +1088,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_cpp"
@@ -1072,6 +1115,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... AutonomousExploration"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_lisp"
@@ -1088,7 +1132,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... test"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -1108,6 +1151,9 @@ help:
 	@echo "... move_base_gencfg"
 	@echo "... move_base_msgs_generate_messages_lisp"
 	@echo "... move_base_msgs_generate_messages_nodejs"
+	@echo "... src/AutonomousExploration.o"
+	@echo "... src/AutonomousExploration.i"
+	@echo "... src/AutonomousExploration.s"
 .PHONY : help
 
 
