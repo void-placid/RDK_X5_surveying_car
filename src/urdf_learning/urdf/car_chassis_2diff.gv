@@ -18,3 +18,4 @@ node [shape=ellipse, color=blue, fontcolor=blue];
 "rt_motor" -> "rt_wheel_joint" [label="xyz: 0 -0.025 0 \nrpy: 0 -0 0"]
 "rt_wheel_joint" -> "rt_wheel_link"
 }
+

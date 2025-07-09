@@ -9,3 +9,4 @@
     <node name="rviz" pkg="rviz" type="rviz"
         args="-d $(find urdf_learning)/config/car_chassis.rviz" required="true" />
 </launch>
+
