@@ -1,0 +1,8 @@
+prefix=/home/liqure/catkin_ws/devel
+
+Name: so3_quadrotor_simulator
+Description: Description of so3_quadrotor_simulator
+Version: 0.0.0
+Cflags: -I/home/liqure/catkin_ws/src/FAEP/uav_simulator/so3_quadrotor_simulator/include
+Libs: -L${prefix}/lib 
+Requires: roscpp quadrotor_msgs uav_utils
