@@ -1,8 +1,0 @@
-prefix=/home/liqure/catkin_ws/install
-
-Name: ros_2dnav_learning
-Description: Description of ros_2dnav_learning
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lros_2dnav_learning
-Requires: amcl gmapping map_server move_base roscpp std_msgs explore_lite

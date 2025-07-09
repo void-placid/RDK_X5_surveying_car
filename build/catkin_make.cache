@@ -1,2 +1,0 @@
-ros_2dnav_learning:ros_2dnav_practice:ros_base_learning:urdf_learning
--DCATKIN_DEVEL_PREFIX=/home/liqure/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/liqure/catkin_ws/install -G Unix Makefiles
